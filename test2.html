@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>text 2</title>
+
+	<style>
+		.toggle { 
+                position: relative;
+			    vertical-align: middle;
+			    align-items: center;
+			    display: inline-block;
+			    background-color: cornsilk;
+			    border-radius: 40px;
+			    border: 2px solid;
+			    color: aqua;
+			    margin: 6rem;
+			    width: 255px;
+			    height: 73px;
+        } 
+        .toggle:after { 
+                content: '';
+			    position: absolute;
+			    width: 70px;
+			    height: 70px;
+			    border-radius: 50%;
+			    background-color: aqua;
+			    top: 1px;
+			    left: 4px;
+			    transition: all 0.6s;
+        }
+
+         .checkbox:checked + .toggle::after { 
+            left : 180px;  
+        } 
+
+        .checkbox:checked + .toggle { 
+            background-color: lightgreen; 
+        }
+
+         .checkbox {  
+            display : none; 
+            
+        } 
+
+	</style>
+
+</head>
+<body>
+	<input type="checkbox" id="switch" class="checkbox" /> 
+    <label for="switch" class="toggle"> 
+    </label> 
+
+</body>
+</html>
